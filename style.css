@@ -1,7 +1,8 @@
 
+
 .column{
-    float:left;
-    text-align:center;
+    border: 1px dashed #666666;
+    padding: 10px;
 }
 
 .left {

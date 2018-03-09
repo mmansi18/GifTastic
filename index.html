@@ -7,33 +7,43 @@
     <title>Gif-tastic</title>
 
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" href ="assets/style.css" >
 </head>
 <body>
-    <div class= "button-container">
+    <div class="container">
         
-        <h1>Movie Search</h1>
-
-        <!--Search results dumped here-->
-        <div id="movies-view"></div>
-
-        <!--Rendered buttons here-->
-        <div id="button-view"></div>
-
+        <h1>Movie-Giphy Search</h1>
+        
     </div>
 
-    <main class="main-container">
+
+    <!--Rendered buttons here-->
+    <div class="container btns">
+        <div id="giphy-view"></div>
+    </div>
+
+
+    <div class="row">
 
         <!--Gif holder-->
-        <div id="gif-container" >
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta tenetur qui a dolorum quo, vitae, explicabo placeat voluptates nemo vel minus porro, quae blanditiis eius id iste recusandae obcaecati eaque.</p>
+        <div class="column left">
+            <div id="giphy-container" >
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta tenetur qui a dolorum quo, vitae, explicabo placeat voluptates nemo vel minus porro, quae blanditiis eius id iste recusandae obcaecati eaque.</p>
+            </div>
         </div>
 
         <!--Search container-->
-        <section id="search-container">
-            <p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta tenetur qui a dolorum quo, vitae, explicabo placeat voluptates nemo vel minus porro, quae blanditiis eius id iste recusandae obcaecati eaque.</p>
-        </section>
+        <div class="column right">
+            <div class="giphy-form">
+               <label for="giphy-input">Whats your favorite movie?!</label>
+               <br>
+               <input type="text" id="giphy-input" placeholder="Movie Title">
+               <br>
+               <input class="btn btn-primary" id="add-giphy" type="submit" value="Add Movie">
+               <input class="btn btn-danger offset-3" id="reset" type="reset" value="Reset">
+            </div>
+        </div>
 
-    </main>
+    </div>
 </body>
 </html>
